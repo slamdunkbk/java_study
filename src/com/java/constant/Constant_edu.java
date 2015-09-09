@@ -1,6 +1,6 @@
 package com.java.constant;
 
-public class ConstantDemo {
+public class Constant_edu {
 
 	public static void main(String[] args) {
 		float a = 2.2f;
