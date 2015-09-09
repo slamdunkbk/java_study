@@ -1,4 +1,4 @@
-package compare;
+package com.java.compare;
 
 public class Equal {
 
