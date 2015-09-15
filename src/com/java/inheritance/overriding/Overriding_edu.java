@@ -1,7 +1,28 @@
-package com.java.inheritance;
+package com.java.inheritance.overriding;
 
-class Substract2 extends Ca {
-	public Substract2(int left, int right) {
+class Ca {
+	int left, right;
+	int third = 0;
+
+	public Ca() {
+	}
+
+	public Ca(int left, int right) {
+		this.left = left;
+		this.right = right;
+	}
+
+	public void sum() {
+		System.out.println(this.left + this.right);
+	}
+
+	public void avg() {
+		System.out.println((this.left + this.right) / 2);
+	}
+}
+
+class overridings extends Ca {
+	public overridings(int left, int right) {
 		super(left, right);
 	}
 
@@ -14,7 +35,8 @@ class Substract2 extends Ca {
 	public void sum() {
 		System.out.println("실행결과는" + (this.left + this.right) + "입니다.");
 	}
-	
+
+
 	// 부모클래스의 사용 방식과 달라서 Error
 	// - 메소드의 이름
 	// - 메소드 매개변수의 숫자와 데이터 타입, 순서
@@ -27,10 +49,11 @@ class Substract2 extends Ca {
 public class Overriding_edu {
 
 	public static void main(String[] args) {
-		Substract2 c1 = new Substract2(10, 20);
+		overridings c1 = new overridings(10, 20);
 		c1.sum();
 		c1.avg();
 		c1.Sub();
+
 	}
 
 }
