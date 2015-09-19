@@ -9,13 +9,16 @@ class Calculator {
 	}
 
 	private int _sum() {
-		return this.left+this.right;
+		return this.left + this.right;
 	}
-	public void sumDecoPlus(){
-		System.out.println("++++"+_sum()+"++++");
+
+	// 같은 클래스 내의 _sum 매소드를 호출 할 수 있다
+	public void sumDecoPlus() {
+		System.out.println("++++" + _sum() + "++++");
 	}
-	public void sumDecoMinus(){
-		System.out.println("----"+_sum()+"----");
+
+	public void sumDecoMinus() {
+		System.out.println("----" + _sum() + "----");
 	}
 
 }
