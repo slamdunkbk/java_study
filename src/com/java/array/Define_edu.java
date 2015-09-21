@@ -1,10 +1,10 @@
 package com.java.array;
 
-public class Define_edu {
+public class Define_edu{
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		// 문자열 배열 classGroup 선언
-		String[] classGroup = { "변수1", "변수2", "변수3", "변수4" };
+		String[] classGroup = {"변수1", "변수2", "변수3", "변수4"};
 
 		// classGroup 배열의 값들의 갯수 확인
 		System.out.println(classGroup.length);

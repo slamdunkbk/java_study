@@ -1,13 +1,15 @@
 package com.java.exception;
 
-class A{
+class A {
 	private int[] arr = new int[3];
-	A(){
+
+	A() {
 		arr[0] = 0;
 		arr[1] = 10;
 		arr[2] = 20;
 	}
-	public void z(int first, int second){
+
+	public void z(int first, int second) {
 		try {
 			System.out.println(arr[first] / arr[second]);
 			// 0을 나눌때 나타나는 오류
@@ -26,8 +28,8 @@ class A{
 	}
 }
 
-public class Exceptions_1{
-	public static void main(String[] args){
+public class Exceptions_1 {
+	public static void main(String[] args) {
 		A a = new A();
 		a.z(10, 1);
 		a.z(1, 0);
